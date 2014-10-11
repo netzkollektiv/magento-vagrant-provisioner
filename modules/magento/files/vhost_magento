@@ -1,0 +1,10 @@
+# vim: syntax=apache
+<VirtualHost *:80>
+   DocumentRoot "/vagrant/web"
+   ServerName vagrant-magento
+
+   SetEnv MAGE_IS_DEVELOPER_MODE "true"
+
+   ErrorLog /var/log/apache2/error.log
+   CustomLog /var/log/apache2/access.log combined
+</VirtualHost>
